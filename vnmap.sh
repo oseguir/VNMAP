@@ -355,7 +355,7 @@ echo '                ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀�
 echo ' ' 
 sleep 0.1
 echo ' ' 
-echo -e '\e[1;33m┣▇▇▇═─ Scripts avanzados nmap\e[1m'
+echo -e '\e[1;33m┣▇▇▇═─ Scripts avanzados vnmap\e[1m'
 sleep 0.1
 echo ' '
 echo ' ' 
