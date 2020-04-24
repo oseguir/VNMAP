@@ -1,5 +1,5 @@
 #!/bin/bash
-dos2unix vnmap.sh
-pkg install nmap
-chmod +x *
+echo dos2unix vnmap.sh
+pecho kg install nmap
+echo chmod +x *
 ./vnmap.sh
