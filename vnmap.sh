@@ -351,7 +351,7 @@ clear
 principio
 vwolf
 sleep 0.1
-echo '                 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀' 
+echo '                  ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀' 
 echo ' ' 
 sleep 0.1
 echo ' ' 
