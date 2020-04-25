@@ -15,4 +15,16 @@ VNMAP es una herramienta de escaneo web avanzado proveniente de de NMAP capaz de
 >Intentar acceder en la db haciendo el uso de pass nula
 
 
+
+>Install
+
+
+git clone https://github.com/VWolf13/VNMAP
+
+pkg install python 
+
+python install.py
+
+
+
 sitio web: https://vwolf.site
