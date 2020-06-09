@@ -90,8 +90,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es extraer información de la web mediante whois\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read wwhois
+read -p "Inserta la web que desea escanear ej.google.es: wwhois" 
 echo  ' ' 
 nmap --script whois-domain.nse $wwhois
 sleep 3.2
@@ -122,8 +121,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es analizar el DNS de la web introducida\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read dnsbrute
+read -p "Inserta la web que desea escanear ej.google.es:" dnsbrute
 echo  ' ' 
 nmap --script dns-brute $dnsbrute
 sleep 3.2
@@ -154,8 +152,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es analizar si la web usa método GET o POST\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read gweb
+read -p "Inserta la web que desea escanear ej.google.es: " gweb
 echo  ' ' 
 nmap --script http-methods $gweb
 sleep 3.2
@@ -186,8 +183,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es generar un mapa de los directores e subdir del sitio web introducido\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read mapa
+read -p "Inserta la web que desea escanear ej.google.es: " mapa
 echo  ' ' 
 nmap --script http-sitemap-generator.nse $mapa -p 80
 sleep 3.2
@@ -218,8 +214,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es verificar que puertos se encuentran abiertos en la web introducida\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read pweb
+read -p "Inserta la web que desea escanear ej.google.es: " pweb
 echo  ' ' 
 nmap --open $pweb
 sleep 3.2
@@ -250,8 +245,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es escanear vulnerabilidades de la web introducida\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read vul
+read -p "Inserta la web que desea escanear ej.google.es: " vul
 echo  ' ' 
 sleep 1.8
 echo -e '\e[1;33mPor favor espere, el escaneo necesita su tiempo\e[0m'
@@ -285,8 +279,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es probar una contraseña nula hacia la db de la web introducida\e[0m' 
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read wsql
+read -p "Inserta la web que desea escanear ej.google.es:" wsql
 echo  ' ' 
 nmap -p 3306 --script=mysql-empty-password $wsql
 sleep 3.2
@@ -317,8 +310,7 @@ echo ' '
 echo -e '\e[1;33mLa función del script es extraer información del servidor web\e[0m'
 sleep 2 1
 echo ' '
-echo -e '\e[0;34mPor favor inserta la web que desea escanear ej.google.es :\e[0m'
-read srvscan
+read -p "Inserta la web que desea escanear ej.google.es: " srvscan
 echo  ' ' 
 echo -e '\e[1;33mEl escaneo puede ser lento, por favor espere\e[0m'
 echo ' '
@@ -382,8 +374,7 @@ sleep 0.1
 echo -e '\e[0;34m┣▇▇═─ [99] Salir\e[1m'
 echo ' ' 
 sleep 2.3
-echo -e '\e[1;33m┣▇▇▇═─ Inserte la opcion a ejecutar:\e[0m'
-read ejecutar
+read -p "┣▇▇▇═─ Inserte la opcion a ejecutar: " ejecutar
 case $ejecutar in
 1)
 	portt
