@@ -1,20 +1,19 @@
 clear
-vwolf() {
 echo '  |..____________________, ,'
 sleep 0.1
 echo ' / `---___________----_____|]-------[VNMAP>> '
 sleep 0.1
 echo '/_==o;;;;;;;;_______.:/ '
 sleep 0.1
-echo '), ---.(_(__) / '
+echo '), ---.(_(__) /          ESCANEO'
 sleep 0.1
-echo '// () ), ----`'
+echo '// () ), ----` '
+sleep 0.1
+echo '//___//                    WEB'
 sleep 0.1
 echo '//___// '
 sleep 0.1
-echo '//___// '
-sleep 0.1
-echo '//___//'
+echo '//___//                  AVANZADO'
 date
 echo ' ' 
 echo ' ' 
