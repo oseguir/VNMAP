@@ -17,7 +17,6 @@ echo '//___//                  AVANZADO'
 date
 echo ' ' 
 echo ' ' 
-} 
 firewall() {
 sleep 2.1
 clear;vwolf
